@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>HTML Form</legend>
+            <br>
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-invalid="false" aria-describedby="emailhelp">
+            <span id="emailhelp">Enter a valid email like example@mail.com</span><br><br>
+            <label for="phone"><b>Phone:</b></label>
+            <input type="phone" id="phone" name="phone" placeholder="example: +2010202020" required pattern="(\+20)?[0-9]{10}" aria-invalid="false" aria-describedby="phonehelp">
+            <span id="phonehelp">Enter 10 digits, optionally with +20</span><br><br>
+            <label for="date"><b>Date:</b>:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="notes"><b>Description:</b></label><br>
+            <textarea name="notes" id="notes" placeholder="Add your Notes" rows="10" cols="50"></textarea><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
